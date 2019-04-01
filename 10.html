@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script type="text/javascript">
+    	var o=document.getElementById('box');
+    function myFunction() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        h=addZero(h);
+        m=addZero(m);
+        s=addZero(s);
+        var time = h + ':' + m + ':' + s;
+        o.innerHTML=time;
+    }
+    function addZero(num){
+    	if (num<10) {
+    		num='0'+num;
+    	}
+    	return num;
+    }
+    myFunction();
+    setInterval(myFunction,1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		/*var day=1;
+		var  x=1;
+		while(day<6){
+           x=x*2+2;
+           day++;
+		}
+		document.write(x);*/
+		/*1.小明妈妈让小明去超市买东西，给100元
+			牙刷5元/只，牙膏15元一只，毛巾8元一条，
+
+			问：小明将100元花光，共有多少种购买方方案？*/
+		/*	穷举法：
+
+			牙刷：a个    0--20
+			牙膏：b个    0--6
+			毛巾：c个	 0--12*/
+			/*var d=100;
+			var num=0;
+			for (var i = 0; i <=20; i++) {
+				for (var j = 0; j < 7; j++) {
+					for (var k = 0; k < 13; k++) {
+						if (d==i*5+j*15+k*8) {
+                            document.write('牙刷：'+i+'牙膏:'+j+'毛巾:'+k+'<br>');
+                            num++;
+						}
+					}
+				}	
+			}
+			document.write(num);*/
+			function myFunction(){
+				for (var i = 1; i < 5; i++) {
+					for (var j = 0; j< 2*i-1; j++) {
+						document.write('*');
+					}
+					document.write('<br>');
+				}	
+			}
+			myFunction();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

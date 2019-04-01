@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+    /*var a=10;
+    	var b=20;
+    	console.log(a+b);
+    	console.log(a+=2);*/
+    /*var a=0.2*0.2;
+    console.log(a);*/
+    /*var a=0.2*0.2;
+    var b=a.toFixed(2);
+    console.log(b);*/
+    /*var a=10;
+    b=a++;
+    b=--a;
+    console.log(a);
+    console.log(b);*/
+    /*var a=4;
+    var b=3;
+    var c=(a++)+(a+b)+(b++);
+    console.log(a,b,c);*/
+    /*var a=4||5;
+    console.log(a);*/
+    /*var a=5;
+    var b=a+"";
+    console.log(b,typeof b);*/
+    /*var a=6;
+    var b=a.toString();
+    console.log(b,typeof b);*/
+    /*	var a='5.2';
+    	// var b=parseInt(a);
+    	var b=parseFloat(a);
+    	console.log(b,typeof b);
+         */
+    /* var a='6';
+      var b='5';
+      console.log(a>b);*/
+    /*var a='6';
+    var b=8;
+    console.log(a>b);*/
+    /* var age=prompt('请输入年龄：');
+     if (age>=6) {
+     	alert('可以上学');
+     }*/
+
+    // 新窗口打开时弹出确认框，是否打开
+    function openWindow() {
+        var a = confirm("是否打开");
+        if (a == true) {
+            var b = prompt("请输入网址", "http://www.baidu.com")
+            if (b == true) {
+                window.open("http://www.baidu.com", "width:400px,height:500px", "menubar=no,toolbar=no")
+            }
+        }
+
+
+
+
+
+
+    }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="新窗口打开网站" onclick="openWindow()" />
+</body>
+
+</html>
